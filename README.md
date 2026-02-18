@@ -1,10 +1,10 @@
-# 📄 PDF QA Chatbot – Athina AI Assignment
+# PDF QA Chatbot
 
 A **Streamlit-based PDF Question-Answering chatbot** that allows you to upload PDF documents, process their content into embeddings, and then ask natural language questions. The chatbot retrieves relevant context and generates detailed answers, while also evaluating the responses using **BLEU**, **ROUGE**, and **BERTScore** metrics.
 
 ---
 
-## 🚀 Features
+## Features
 - **Multiple PDF Upload** – Upload one or more PDF documents at once.
 - **Text Extraction** – Extracts text from all PDF pages.
 - **Text Chunking** – Splits large documents into smaller chunks for efficient retrieval.
@@ -18,7 +18,7 @@ A **Streamlit-based PDF Question-Answering chatbot** that allows you to upload P
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 ```
 .
 ├── app.py                # Main Streamlit application
@@ -29,7 +29,7 @@ A **Streamlit-based PDF Question-Answering chatbot** that allows you to upload P
 
 ---
 
-## 🛠️ Installation
+## Installation
 
 ### 1️⃣ Clone the repository
 ```bash
@@ -37,21 +37,21 @@ git clone https://github.com/your-username/pdf-qa-chatbot.git
 cd pdf-qa-chatbot
 ```
 
-### 2️⃣ Create a virtual environment
+### Create a virtual environment
 ```bash
 python -m venv venv
 source venv/bin/activate  # On macOS/Linux
 venv\Scripts\activate     # On Windows
 ```
 
-### 3️⃣ Install dependencies
+### Install dependencies
 ```bash
 pip install -r requirements.txt
 ```
 
 ---
 
-## 🔑 Environment Variables
+## Environment Variables
 Create a `.env` file in the root directory and add your **Google API key**:
 
 ```
@@ -62,7 +62,7 @@ You can get a Google API key from the [Google AI Studio](https://aistudio.google
 
 ---
 
-## ▶️ Usage
+## Usage
 Run the Streamlit app:
 ```bash
 streamlit run app.py
@@ -78,7 +78,7 @@ streamlit run app.py
 
 ---
 
-## 📊 Example Output
+## Example Output
 
 **Console log:**
 ```
@@ -97,7 +97,7 @@ BERT Scores - Precision: tensor([0.93]) Recall: tensor([0.91]) F1: tensor([0.92]
 
 ---
 
-## 📦 Dependencies
+## Dependencies
 - `streamlit`
 - `PyPDF2`
 - `langchain`
@@ -108,15 +108,8 @@ BERT Scores - Precision: tensor([0.93]) Recall: tensor([0.91]) F1: tensor([0.92]
 - `rouge-score`
 - `bert-score`
 - `python-dotenv`
-
 ---
-
-## 📜 License
-This project is licensed under the MIT License.
-
----
-
-## 🤝 Acknowledgements
+## Acknowledgements
 - [LangChain](https://www.langchain.com/) for text processing and chain management.
 - [Google Generative AI](https://aistudio.google.com/) for embeddings and chat model.
 - [FAISS](https://faiss.ai/) for vector similarity search.
